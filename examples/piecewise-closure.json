@@ -1,0 +1,26 @@
+{
+  "pipe": {
+    "length": 1000.0,
+    "diameter": 0.5,
+    "waveSpeed": 1000.0,
+    "frictionFactor": 0.015
+  },
+  "reservoir": {
+    "head": 120.0
+  },
+  "initialVelocity": 1.2,
+  "closure": {
+    "kind": "piecewise",
+    "points": [
+      { "time": 0.0, "opening": 1.0 },
+      { "time": 2.0, "opening": 0.7 },
+      { "time": 6.0, "opening": 0.25 },
+      { "time": 10.0, "opening": 0.0 }
+    ]
+  },
+  "discretization": {
+    "segments": 40,
+    "simulationTime": 18.0,
+    "maxSteps": 100000
+  }
+}
